@@ -1,0 +1,24 @@
+﻿.DivisionList{
+border: #01a647 1px solid;
+text-align: center;
+margin-top: 20px;
+}
+.DivisionListHead
+{
+border: #01a647 1px solid;
+background-color: #99FFCC;
+}
+a.DivisionUnselected {
+line-height: 25px;
+text-decoration: none;
+color: Black;
+}
+a.DivisionUnselected:hover {
+text-decoration: underline;
+}
+a.DivisionSelected {
+line-height: 25px;
+font-weight: bold;
+text-decoration: none;
+color: Black;
+}

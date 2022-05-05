@@ -1,0 +1,42 @@
+    <ItemTemplate>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ref. No:</td>
+                <td>
+                    <a href="<%# SamplesRepository.UserCode.Link.ToSampleDetails(Eval("Id").ToString()) %>">
+                    <%# HttpUtility.HtmlEncode(Eval("RefNumber").ToString()) %>
+                </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td>
+                    <%# Eval("DReceived") %>
+                </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Type:</td>
+                <td>
+                    <%# HttpUtility.HtmlEncode(Eval("SampleType").ToString()) %>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="<%# SamplesRepository.UserCode.Link.ToProductImage(Eval("Id").ToString()) %>">
+                    <img width="100" border="0" src="<%# SamplesRepository.UserCode.Link.ToProductImage(Eval("ImageUrl").ToString()) %>" 
+                        alt ='<%# HttpUtility.HtmlEncode(Eval("RefNumber").ToString())%>' />
+                    </a>
+                </td>
+                
+            </tr>
+        </tbody>
+
+    </table>
+    </ItemTemplate>
